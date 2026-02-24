@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Git Milestone Unlocked</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 I Uploaded My First Project Using Git!</h1>
+    <p class="subtext">You just committed, pushed, and published like a true dev.</p>
+
+    <div class="badge">
+      <p class="badge-title">Git Achievement Badge</p>
+      <p class="name">Awarded to: <span id="student-name">[Your Name Here]</span></p>
+      <p class="date">Date: <span id="today-date"></span></p>
+    </div>
+
+    <!-- 📝 Edit the message below to leave a note for your future dev self! -->
+    <p class="future-message">"I’m proud of myself for learning Git!"</p>
+
+    <button onclick="changeName()">Personalise This</button>
+  </div>
+
+  <script>
+    // Set today's date
+    document.getElementById("today-date").textContent = new Date().toLocaleDateString();
+
+    // Prompt for name input
+    function changeName() {
+      const name = prompt("Enter your name:");
+      if (name) {
+        document.getElementById("student-name").textContent = name;
+      }
+    }
+  </script>
+</body>
+</html>
